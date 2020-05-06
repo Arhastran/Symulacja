@@ -112,10 +112,7 @@ BufferedImage image = null;
             	 
 		Dimension dimension = new Dimension(image.getWidth(), image.getHeight());
 		setPreferredSize(dimension);	
-		
-		
-	    
-	    
+		 
 	}
 	public void actionPerformed(ActionEvent e){
 		if (e.getActionCommand() == "english"){

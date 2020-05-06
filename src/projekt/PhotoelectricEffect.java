@@ -577,5 +577,4 @@ public class PhotoelectricEffect extends JFrame implements ActionListener {
 			 
 		 }
 	}
-	
 }

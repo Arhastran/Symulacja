@@ -107,6 +107,7 @@ JTextField text2;
 		editorpane.setEditable(false);	
 	    this.add(editorpane, BorderLayout.CENTER);
 	}
+	
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
