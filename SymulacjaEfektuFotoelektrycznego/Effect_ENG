@@ -1,0 +1,27 @@
+What exactly is Photoelectric effect, and how was it discovered? 
+When light or other radiation hits material it transfers it's energy directly to it. If electron inside material
+receives more energy than the one which binds it to atom's core it can escape material. Electrons which left
+material this way, are called photoelectrons. Whole idea of how photoelectric effect works is described by
+quantum mechanics. First explanation of the effect was proposed by Einstein in 1905. His work was the foundation
+of determining the dualistic nature of photon, and concept of packets of energy. 
+The phenomenon can be described:
+
+h * v = W + E
+where:
+h- Planck's constant
+v-frequency of photon
+W-work function of material 
+E- maximum energy of emitted electrons
+
+Our program can show user how (conceptually) free electrons leave material. The user can work with following fixed
+materials, with known work function:
+
+Magnesium: 3,66 eV
+Silver: 4,7 eV
+Cesium: 2,14 eV
+Gold: 5,47 eV 
+
+As was mentioned before, the phenomenon will occure only if energy of photon will be great enough to break 
+binding forces of electron however the user can enter any frequency. 
+
+Photoelectric effect is used by modern technology in many ways. One, for example is in photography, in image sensors.
