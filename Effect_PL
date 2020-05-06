@@ -1,0 +1,28 @@
+Czym jest efekt fotoelektryczny i kto go odkryl?
+Gdy swiatlo lub inne promieniowanie uderzy material, przenosi swoja energie bezposrednio do niego. Jesli elektron
+w materiale otrzyma wieksza energie niz ta ktora wiaze go z jadrem atomu, moze opusccic material. Elektrony ktore
+w ten sposob uciekly nazywamy fotoelektronami. Caly koncept mechanizmu jest opisywany przez mechanike kwantowa.
+Pierwsze wyjasnienie zjawiska bylo zaprezentowane przez Einsteina w 1905 roku. Jego praca byla podstawa do
+utrwalenia dualistycznej natury swiatla i konceptu paczek energetycznych. 
+Zjawisko mozemy opisac:
+
+h * v = W + E
+gdzie:
+h- stala Plancka
+v- czestotliwosc fotonu
+W- praca wyjscia materialu 
+E- maksymalna energia emitowanego elektronu 
+
+Nasz program pokazuje jak (koncepcyjnie) wolne elektrony opuszczaja material. Uzytkownik moze posluzyc sie wybranymi
+materialami, dla ktorych znamy prace wyjscia:
+
+Magnez: 3,66 eV
+Srebro: 4,7 eV
+Cez: 2,14 eV
+Zloto: 5,47 eV 
+
+Jak zostalo wspomniane, zjawisko zajdzie tylko jesli energia fotonu bedzie wystarczajaco duza zeby uwolnic elektron.
+Jednak uzytkownik moze wpisac kazda czestotliwosc. 
+
+Efekt fotoelektryczny jest uzywany we wspolczensych wynalazkach na rozne sposoby. Dla przykladu: w fotografii,
+przetworniki obrazu.
