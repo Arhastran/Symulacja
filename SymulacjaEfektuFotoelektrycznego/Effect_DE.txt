@@ -1,0 +1,28 @@
+Was ist der photoelektrische Effekt und wer hat ihn entdeckt?
+Wenn Licht oder andere Strahlung auf das Material trifft, überträgt es seine Energie direkt auf das Material. Wenn Elektron
+im Material wird er mehr Energie erhalten als das, was ihn an den Atomkern bindet, er kann das Material verlassen. Elektronen, die
+auf diese Weise sind sie entkommen, wir nennen Photoelektronen. Das gesamte Konzept des Mechanismus wird durch die Quantenmechanik beschrieben.
+Die erste Erklärung des Phänomens wurde 1905 von Einstein vorgelegt. Seine Arbeit war die Grundlage für
+Konsolidierung der dualistischen Natur des Lichts und des Konzepts der Energiepakete.
+Das Phänomen kann beschrieben werden:
+
+h * v = W + E.
+wo:
+h - Plancksche Konstante
+v-Photonenfrequenz
+Arbeitsmaterial ausgeben
+E - maximale Energie des emittierten Elektrons
+
+Unser Programm zeigt, wie (konzeptionell) freie Elektronen das Material verlassen. Der Benutzer kann die ausgewählten verwenden
+Materialien, für die wir die Output-Arbeit kennen:
+
+Magnesium: 3,66 eV
+Silber: 4,7 eV
+Cäsium: 2,14 eV
+Gold: 5,47 eV
+
+Wie bereits erwähnt, tritt das Phänomen nur auf, wenn die Photonenenergie groß genug ist, um das Elektron freizusetzen.
+Der Benutzer kann jedoch eine beliebige Frequenz eingeben.
+
+Der photoelektrische Effekt wird in modernen Erfindungen auf verschiedene Weise verwendet. Zum Beispiel: in der Fotografie,
+Bildsensoren.

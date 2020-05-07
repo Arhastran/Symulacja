@@ -9,6 +9,7 @@ import java.awt.EventQueue;
 import java.awt.FlowLayout;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.HeadlessException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
@@ -22,7 +23,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
- 
+
 
 public class Window2 extends JFrame implements ActionListener 
 {
@@ -40,7 +41,7 @@ JLabel label;
 JButton PL, ENG, RUS, GE;
 
 BufferedImage image = null;
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		
 		EventQueue.invokeLater(new Runnable(){
 			public void run(){
@@ -53,15 +54,30 @@ BufferedImage image = null;
 				}
 			}
 		});
-	}
+	}*/
  
 	
 	public Window2() {
 		super(); 
 		
-		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		this.setSize(900,600);
-	    this.setLayout(new BorderLayout());
+		URL resource = getClass().getResource("alleluja.png");
+		try 
+		{
+			image = ImageIO.read(resource);
+			Graphics g2d = drawPanel.getGraphics();
+			g2d.drawImage(image, 0,0, drawPanel);
+		} 
+		catch (IOException en) 
+		{
+			System.err.println("Blad odczytu obrazka");
+			en.printStackTrace();
+		}
+            	 
+		Dimension dimension = new Dimension(image.getWidth(), image.getHeight());
+		setPreferredSize(dimension);	
+		 
+	        
+	        
 	    
 	    pUpper = new JPanel();
 	    
@@ -96,24 +112,10 @@ BufferedImage image = null;
 	    drawPanel= new JPanel();
 	    drawPanel.setBackground(Color.white);
 	    this.add(drawPanel, BorderLayout.CENTER);
-	    
-		URL resource = getClass().getResource("alleluja.PNG");
-		try 
-		{
-			image = ImageIO.read(resource);
-			Graphics g2d = drawPanel.getGraphics();
-			g2d.drawImage(image, 0,0, drawPanel);
-		} 
-		catch (IOException en) 
-		{
-			System.err.println("Blad odczytu obrazka");
-			en.printStackTrace();
-		}
-            	 
-		Dimension dimension = new Dimension(image.getWidth(), image.getHeight());
-		setPreferredSize(dimension);	
-		 
 	}
+	    
+	/*	
+	}*/
 	public void actionPerformed(ActionEvent e){
 		if (e.getActionCommand() == "english"){
 			
@@ -130,11 +132,35 @@ BufferedImage image = null;
 	
 	}
 	
-
 	public void paintComponent(Graphics g)
 	{
 		Graphics2D g2d = (Graphics2D) g;
 		g2d.drawImage(image, 0, 0, this);
 	}
 	
+}
+
+class ImagePanelDemo extends JFrame {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+
+	public ImagePanelDemo() throws HeadlessException {
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setLayout(new FlowLayout());
+		Window2 obrazek = new Window2();
+		//setSize(obrazek.getPreferredSize());
+		add(obrazek);
+	}
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ImagePanelDemo okno = new ImagePanelDemo();
+		okno.setVisible(true);
+	}
+
 }
